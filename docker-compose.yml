@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  example:
+    image: example-image
+    build:
+      context: .
+    env_file:
+      - ./.env
+    networks:
+      - shared-network
+    ports:
+      - "8080:8080"
+
+networks:
+  shared-network:
+    driver: bridge
