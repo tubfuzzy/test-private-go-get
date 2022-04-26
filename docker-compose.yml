@@ -6,8 +6,8 @@ services:
     build:
       context: .
       args:
-        - GIT_USER=
-        - ACCESS_TOKEN=
+        - GIT_USER=theeraprasert
+        - ACCESS_TOKEN=NHcfDjEynj4yAUsNDEKC
     env_file:
       - ./.env
     networks:
