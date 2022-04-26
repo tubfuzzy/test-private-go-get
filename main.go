@@ -4,7 +4,6 @@ import (
 	"go-circuit-breaker/internal/controller"
 	"go-circuit-breaker/pkg/circuitbreaker"
 
-	// test "bitbucket.org/panda-development/go-package"
 	"github.com/gofiber/fiber/v2"
 )
 
@@ -16,7 +15,6 @@ import (
 // git config --global url."https://theeraprasert@bitbucket.com:m8HyRz6AqJYWr8Q73DGk@bitbucket.com/".insteadOf "https://bitbucket.com/"
 
 func main() {
-	// test.Print()
 	app := fiber.New(fiber.Config{})
 	circuitbreaker.Init()
 	app.Get("/example/:id", controller.Example)

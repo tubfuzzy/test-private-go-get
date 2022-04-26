@@ -5,6 +5,9 @@ services:
     image: example-image
     build:
       context: .
+      args:
+        - GIT_USER=
+        - ACCESS_TOKEN=
     env_file:
       - ./.env
     networks:
